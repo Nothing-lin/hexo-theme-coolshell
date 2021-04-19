@@ -1,0 +1,26 @@
+/* ------文字选中背景颜色------ */
+
+div::selection,p::selection,span::selection,h1::selection,h2::selection,
+h3::selection,h4::selection,h5::selection,h6::selection,a::selection,
+img::selection,li::selection,br::selection,strong::selection,del::selection,
+s::selection,em::selection,sub::selection,sup::selection,abbr::selection,
+time::selection,input::selection,button::selection{
+    background: #D5E5F1;
+}
+
+div::-moz-selection,p::-moz-selection,span::-moz-selection,h1::-moz-selection,h2::-moz-selection,
+h3::-moz-selection,h4::-moz-selection,h5::-moz-selection,h6::-moz-selection,a::-moz-selection,
+img::-moz-selection,li::-moz-selection,br::-moz-selection,strong::-moz-selection,del::-moz-selection,
+s::-moz-selection,em::-moz-selection,sub::-moz-selection,sup::-moz-selection,abbr::-moz-selection,
+time::-moz-selection,input::-moz-selection,button::-moz-selection{
+    background: #D5E5F1;
+}
+
+div::-webkit-selection,p::-webkit-selection,span::-webkit-selection,h1::-webkit-selection,h2::-webkit-selection,
+h3::-webkit-selection,h4::-webkit-selection,h5::-webkit-selection,h6::-webkit-selection,a::-webkit-selection,
+img::-webkit-selection,li::-webkit-selection,br::-webkit-selection,strong::-webkit-selection,del::-webkit-selection,
+s::-webkit-selection,em::-webkit-selection,sub::-webkit-selection,sup::-webkit-selection,abbr::-webkit-selection,
+time::-webkit-selection,input::-webkit-selection,button::-webkit-selection{
+    background: #D5E5F1;
+}
+

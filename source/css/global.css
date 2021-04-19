@@ -1,0 +1,11 @@
+/* 填充满边界 */
+*{
+  margin: 0;
+  padding: 0;
+  /* font-family: SourceSansPro,sans-serif; */
+}
+/* 插入字体 */
+@font-face {
+	font-family: SourceSansPro;
+	src: url(../lib/font/Source-Sans-Pro.ttf);
+}
