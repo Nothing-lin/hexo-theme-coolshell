@@ -7,7 +7,7 @@ section{
 	width: 1140px;
 	margin: auto;
 	display: flex;
-	
+
 }
 .section-postlist-container{
 	width: 848px;
@@ -74,42 +74,17 @@ section{
 	height: 200px;
 	display: flex;
 	flex-direction: column;
-	
-}
-.postlist-picture-container button{
-	width: 100px;
-	height: 50px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	align-self:flex-end;
-	margin-right: 20px;
-	font-size: 16px;
-	font-weight: 600;
-	border-style: none;
-	color: #333333;
-}
 
-.postlist-picture-container button:hover{
-	width: 100px;
-	height: 50px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	align-self:flex-end;
-	margin-right: 20px;
-	font-size: 16px;
-	font-weight: 600;
-	border-style: none;
-	color: white;
-	background-color: #F4A81E;
 }
 
 .postlist-picture{
 	background: url(../img/default.png);
 	background-size: 100% 100%;
 	width: 230px;
-	height: 190px;
+	height: 160px;
 	margin-top: 20px;
 	margin-right: 20px;
+	margin-bottom: 20px;
 	align-self:flex-end;
 }
 
@@ -123,7 +98,7 @@ section{
 .postlist-info ul{
 	display: flex;
 	list-style: none;
-	
+
 }
 
 .postlist-info li{
@@ -187,7 +162,7 @@ section{
 	margin-top: 15px;
 }
 .index-pagination-container li{
-	
+
 }
 .index-pagination-container a{
 	text-decoration: none;
