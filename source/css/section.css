@@ -36,7 +36,11 @@ section{
 	margin-top: 20px;
 	margin-left: 20px;
 }
+.postlist-intro-container{
+	height: 85px;
+	width: 515px;
 
+}
 .postlist-title a{
 	font-size: 20px;
 	font-weight: 600;
@@ -55,9 +59,6 @@ section{
 	margin-left: 20px;
 	padding-bottom: 10px;
 	text-align:justify;
-	border-bottom-style: solid;
-	border-bottom-width: 2.2px;
-	border-bottom-color: #009688;
 }
 
 .postlist-intro a{
@@ -91,8 +92,14 @@ section{
 .postlist-info{
 	display: flex;
 	flex-direction: row;
-	padding-left: 20px;
+	width: 515px;
+	margin-left: 20px;
+	margin-top: 5px;
 	padding-top: 5px;
+	margin-bottom: 10px;
+	border-top-style: solid;
+	border-top-width: 2.2px;
+	border-top-color: #009688;
 }
 
 .postlist-info ul{
