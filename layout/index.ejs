@@ -10,8 +10,8 @@
 
 		<div class="postlist-intro">
 			<div class="postlist-intro-container">
-				<a href="<%- url_for(post.path) %>"><%- post.title %>">
-					<%- truncate(strip_html(post.content),{length: 100,omission: '...'}) %>...
+				<a href="<%- url_for(post.path) %>">
+					<%- truncate(strip_html(post.content),{length: 130,omission: '...'}) %>...
 				</a>
 			</div>
 		</div>
@@ -27,7 +27,11 @@
 	</div>
 
 	<div class="postlist-picture-container">
-		<div class="postlist-picture"></div>
+		<div class="postlist-picture">
+			<a href="<%- url_for(post.path) %>">
+			<img src="../img/default.png" alt="default">
+			</a>
+		</div>
 	</div>
 </div>
 <% }) %>
