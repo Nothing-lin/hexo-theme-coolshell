@@ -1,7 +1,5 @@
 .section-sidebar{
 	width: 263px;
-	margin-left: 15px;
-	margin-right: 15px;
 	display: flex;
 	flex-direction: column;
 }
@@ -118,7 +116,7 @@
 	flex-direction: row;
 	flex-flow: row wrap;
 	justify-content: center;
-	
+
 }
 
 .links-ico-github{
@@ -325,10 +323,10 @@
 	margin: auto;
 	padding-top: 15px;
 	padding-bottom: 15px;
-	
+
 }
 .sibar-subscribe-picture img{
 	width: 100%;
 	height: 100%;
-	
+
 }
