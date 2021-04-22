@@ -82,12 +82,20 @@
   border-left-color: #E4E4E4;
   margin-top: 40px;
   margin-bottom: 17px;
+  color: #424242;
+}
+
+.article-markdown-content h5 {
+  font-size: 16px;
+  margin: 15px 0;
 }
 
 .article-markdown-content p {
   font-size: 18px;
   text-align: justify;
   margin-bottom: 15px;
+  line-height: 27px;
+  color: #424242;
 }
 
 .article-markdown-content a {
@@ -101,7 +109,7 @@
 }
 
 .article-markdown-content strong {
-  font-size: 16px;
+  font-size: 18px;
   margin-top: 5px;
 }
 
@@ -133,9 +141,8 @@
   width: 87%;
   margin: 20px auto;
   font-family: Open Sans;
-  font-style: italic;
   color: #555555;
-  padding: 1.2em 30px 1.2em 55px;
+  padding: 15px 30px 15px 55px;
   line-height: 1.6;
   position: relative;
   background: #F9F9F9;
@@ -151,15 +158,46 @@
   top: -15px;
 }
 
-.article-markdown-content blockquote p{
+.article-markdown-content blockquote p {
   font-size: 15px;
   margin-bottom: 0px !important;
 }
 
+.article-markdown-content table {
+  border: 1px solid #ddd;
+  border-left: 0;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 20px;
+  max-width: 100%;
+  background-color: transparent;
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 0;
+  color: #424242;
+}
+
+.article-markdown-content table th {
+  border-left: 1px solid #ddd;
+  padding: 8px;
+  background-color: #F9F9F9;
+}
+
+.article-markdown-content table td {
+  border-left: 1px solid #ddd;
+  padding: 8px;
+  line-height: 20px;
+  text-align: left;
+  border-top: 1px solid #ddd;
+}
+
 .article-container {
-  width: 100%;
+  width: 98.2%;
+  height: auto;
+  padding-bottom: 20px;
   background-color: #ffffff;
-  width: 100%;
   box-shadow: 0px 1px 1px rgba(100, 100, 0, 0.1);
   display: flex;
   flex-direction: column;
