@@ -6,7 +6,7 @@
 	<div class="postlist-content">
 		<div class="postlist-title">
 			<a href="<%- url_for(post.path) %>">
-				<%- truncate(post.title, {length: 32, omission: '......'}) %>
+				<%- truncate(post.title || '该文章无标题', {length: 32, omission: '......'}) %>
 			</a>
 		</div>
 
