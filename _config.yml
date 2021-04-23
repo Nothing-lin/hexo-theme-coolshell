@@ -1,0 +1,26 @@
+## 博主个人社交平台链接设置
+social:
+ - name: Github
+   icon: github
+   href: https://github.com/Nothing-lin
+ - name: 知乎
+   icon: zhihu
+   href: https://www.zhihu.com/people/nothing-86-28-47
+ - name: 微信
+   icon: wechat
+   href: /
+ - name: csdn
+   icon: csdn
+   href: /
+ - name: rss
+   icon: rss
+   href: /
+ - name: weibo
+   icon: weibo
+   href: /
+ - name: jianshu
+   icon: jianshu
+   href: /
+ - name: public
+   icon: public
+   href: /

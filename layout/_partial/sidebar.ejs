@@ -36,14 +36,11 @@
 	</div>
 
 	<div class="author-links">
-		<a href="#" class="links-hreh"><i class="links-ico-github"></i></a>
-		<a href="#" class="links-hreh"><i class="links-ico-zhihu"></i></a>
-		<a href="#" class="links-hreh"><i class="links-ico-wechat"></i></a>
-		<a href="#" class="links-hreh"><i class="links-ico-csdn"></i></a>
-		<a href="#" class="links-hreh"><i class="links-ico-rss"></i></a>
-		<a href="#" class="links-hreh"><i class="links-ico-weibo"></i></a>
-		<a href="#" class="links-hreh"><i class="links-ico-jianshu"></i></a>
-		<a href="#" class="links-hreh"><i class="links-ico-public"></i></a>
+		<% theme.social.forEach(function (item) {%>
+		<a href="<%- item.href%>" class="links-hreh" rel="external nofollow" title="<%- item.name%>" target="_blank">
+				<i class="links-ico-<%- item.icon%>"></i>
+		</a>
+		<%})%>
 	</div>
 
 </div>
