@@ -1,0 +1,10 @@
+<% if (page.total > 1){ %>
+<div class="index-pagination">
+  <div class="index-pagination-container" role="navigation">
+    <%- paginator({
+                prev_text: "上一页",
+                next_text: "下一页"
+            }) %>
+  </div>
+</div>
+<% } %>
