@@ -26,6 +26,7 @@ section {
   background-color: #ffffff;
   justify-content: space-between;
   margin-bottom: 30px;
+  border-radius: 15px;
 }
 
 .postlist-content {

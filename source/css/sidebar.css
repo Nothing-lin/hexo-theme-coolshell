@@ -12,6 +12,7 @@
 	margin-left: 15px;
 	margin-right: 15px;
 	margin-bottom: 30px;
+	border-radius: 15px;
 }
 .sidebar-announce-container{
 	display: flex;
@@ -48,6 +49,7 @@
 	margin-bottom: 30px;
 	display: flex;
 	flex-direction: column;
+	border-radius: 15px;
 }
 .author-header{
 	padding-left: 15px;
@@ -274,6 +276,7 @@
 	margin-bottom: 30px;
 	display: flex;
 	flex-direction: column;
+	border-radius: 15px;
 }
 .aritcle-category-header{
 	padding-left: 15px;
@@ -303,6 +306,7 @@
 	margin-bottom: 30px;
 	display: flex;
 	flex-direction: column;
+	border-radius: 15px;
 }
 .sidebar-subscribe-header{
 	padding-left: 15px;
