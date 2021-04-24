@@ -58,7 +58,7 @@
         <ul>
           <% item.posts.each(function(e){ %>
           <li>
-            <a href="<%=e.path%>" title="<%=e.title%>"><%- truncate(e.title || '该文章无标题', {length: 15, omission: '···'}) %></a>
+            <a href="<%- url_for(e.path) %>" title="<%=e.title%>"><%- truncate(e.title || '该文章无标题', {length: 15, omission: '···'}) %></a>
           </li>
           <% }) %>
         </ul>
