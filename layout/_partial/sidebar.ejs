@@ -45,29 +45,32 @@
 
 </div>
 
-<div class="aritcle-category">
-  <div class="aritcle-category-header">
-    <span>文章分类</span>
-  </div>
+<% if(is_page()){ %>
 
-  <div class="aritcle-category-section">
-    <ul id="tree">
-      <% site.categories.each(function(item) { %>
-      <li>
-        <a class="collapse" href="#"><%=item.name%></a>
-        <ul>
-          <% item.posts.each(function(e){ %>
-          <li>
-            <a href="<%- url_for(e.path) %>" title="<%=e.title%>"><%- truncate(e.title || '该文章无标题', {length: 15, omission: '···'}) %></a>
-          </li>
-          <% }) %>
-        </ul>
-      </li>
-      <% }) %>
-    </ul>
-  </div>
-</div>
+<% } else { %>
+  <div class="aritcle-category">
+    <div class="aritcle-category-header">
+      <span>文章分类</span>
+    </div>
 
+    <div class="aritcle-category-section">
+      <ul id="tree">
+        <% site.categories.each(function(item) { %>
+        <li>
+          <a class="collapse" href="#"><%=item.name%></a>
+          <ul>
+            <% item.posts.each(function(e){ %>
+            <li>
+              <a href="<%- url_for(e.path) %>" title="<%=e.title%>"><%- truncate(e.title || '该文章无标题', {length: 15, omission: '···'}) %></a>
+            </li>
+            <% }) %>
+          </ul>
+        </li>
+        <% }) %>
+      </ul>
+    </div>
+  </div>
+<% } %>
 <div class="sidebar-subscribe">
   <div class="sidebar-subscribe-header">
     <span>公众号订阅作者</span>

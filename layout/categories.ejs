@@ -1,2 +1,43 @@
+<div class="category-container">
+  <div class="article-header">
+    <div class="article-header-container">
+      <div class="article-header-title">
+        <span><%= '文章分类列表' %></span>
+      </div>
 
-<%- list_categories() %>
+      <div class="article-header-meta">
+        <ul>
+          <li>
+            <div class="datatime"></div>2021年4月16日
+          </li>
+          <li>
+            <div class="author"></div>nothinglin
+          </li>
+          <li>
+            <div class="comment"></div>11条评论
+          </li>
+          <li>
+            <div class="readnumbers"></div>17，096人阅读
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="category-menu">
+    <ul id="tree">
+      <% site.categories.each(function(item) { %>
+      <li class="category-index-title">
+        <a class="collapse" href="#"><%=item.name%> &nbsp -- &nbsp (<%=item.length%>) </a>
+        <ul>
+          <% item.posts.each(function(e){ %>
+          <li>
+            <a href="<%- url_for(e.path) %>" title="<%=e.title%>"> 📄 <%- e.title %></a>
+          </li>
+          <% }) %>
+        </ul>
+      </li>
+      <% }) %>
+    </ul>
+  </div>
+</div>
