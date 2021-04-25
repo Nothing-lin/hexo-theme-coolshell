@@ -1,0 +1,42 @@
+.archive-container {
+  width: 98.3%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  border-radius: 15px;
+}
+
+.archive-content {
+  width: 703px;
+  padding: 0 72px 50px 72px;
+}
+
+.archive-content ul {
+  list-style: none;
+  font-size: 18px;
+}
+
+.archive-content li {
+  border-bottom: 1px solid #ddd;
+  padding: 15px;
+}
+
+.archive-content a {
+  text-decoration: none;
+  color: #607D8B;
+}
+
+.archive-content a:hover {
+  text-decoration: none;
+  color: #009688;
+}
+
+.archive-span-date{
+  margin-right: 10px;
+}
+.archive-span-author{
+  margin-left: 10px;
+  margin-right: 10px;
+}

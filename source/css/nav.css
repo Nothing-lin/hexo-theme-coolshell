@@ -50,7 +50,7 @@ nav{
 	position: relative;
 	float: right;
 	text-align: right;
-	
+
 }
 .navbar-menu a{
 	text-decoration: none;
@@ -65,12 +65,12 @@ nav{
 .navbar-menu ul{
 	display: flex;
 	list-style: none;
-	
+
 }
 
 .navbar-menu li{
 	padding: 15px;
-	
+
 }
 
 .ico-seach{
@@ -96,27 +96,26 @@ nav{
 	display: flex;
 	flex-direction: column;
 	height: 50px;
-	width: 675px;
+	width: 630px;
 	margin: auto;
 	text-align: center;
 }
 
 .cover-brand{
 	color: #FFFFFF;
-	font-size: 69px;
+	font-size: 63px;
 	font-weight: bold;
 	letter-spacing: 8px;
 	padding-top: 30px;
 	padding-bottom: 5px;
 	border-bottom-style: solid;
-	border-bottom-width: 2px;
-	
+	border-bottom-width: 3px;
+
 }
 
 .cover-subbrand{
 	color: #FFFFFF;
 	font-size: 18px;
-	letter-spacing: 5px;
-	padding-top: 5px;
+	letter-spacing: 4.5px;
+	padding-top: 10px;
 }
-

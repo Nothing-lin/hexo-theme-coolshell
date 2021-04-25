@@ -42,6 +42,3 @@
 .tag-icon:before{
   content: '🔖'!important;
 }
-.tag-icon.active:before {
-  content: '📝'!important;
-}
