@@ -1,0 +1,12 @@
+.fix {
+		position: fixed;
+		top: 0;
+		left: 0;
+}
+/* 清除浮动 */
+.clearfix:after {
+	display: block;
+	content: '\200B';
+	height: 0;
+	clear: both;
+}
