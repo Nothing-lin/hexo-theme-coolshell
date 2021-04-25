@@ -59,7 +59,7 @@
         <li>
           <a class="collapse" href="#"><%=item.name%></a>
           <ul>
-            <% item.posts.each(function(e){ %>
+            <% item.posts.sort('date', 'desc').each(function(e){ %>
             <li>
               <a href="<%- url_for(e.path) %>" title="<%=e.title%>"><%- truncate(e.title || '该文章无标题', {length: 15, omission: '···'}) %></a>
             </li>

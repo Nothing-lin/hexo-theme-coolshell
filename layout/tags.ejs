@@ -27,7 +27,7 @@
 
   <div class="tag-menu">
     <ul id="tree">
-      <% site.tags.each(function(item) { %>
+      <% site.tags.sort('date', 'desc').each(function(item) { %>
       <li class="tag-index-title">
         <a class="collapse tag-icon" href="#"><%=item.name%> &nbsp -- &nbsp (<%=item.length%>) </a>
         <ul>

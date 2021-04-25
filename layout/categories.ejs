@@ -30,7 +30,7 @@
       <li class="category-index-title">
         <a class="collapse" href="#"><%=item.name%> &nbsp -- &nbsp (<%=item.length%>) </a>
         <ul>
-          <% item.posts.each(function(e){ %>
+          <% item.posts.sort('date', 'desc').each(function(e){ %>
           <li>
             <a href="<%- url_for(e.path) %>" title="<%=e.title%>"> 📄 <%- e.title %></a>
           </li>
