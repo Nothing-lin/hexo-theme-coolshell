@@ -15,13 +15,15 @@
 
     </div>
   </section>
-
+  <!-- gototop按钮 -->
+  <button class="gototop"><span>👆TOP</span></button>
 
   <%- partial('_partial/footer') %>
 
   <!-- 代码高亮插件 -->
   <%- js('js/jquery-3.6.0.min.js') %>
   <%- js('js/menutree.js') %>
+  <%- js('js/jquery.gototop.min.js') %>
   <%- js('js/nav-show-always.js') %>
   <%- js('js/enlighterjs.min.js') %>
   <script type="text/javascript">
@@ -35,6 +37,19 @@
       theme: 'enlighter',
       textOverflow: 'scroll',
       indent: 2
+    });
+  </script>
+
+  <!-- gototop 脚本 -->
+  <script type="text/javascript">
+    $(function() {
+      // $(".gototop").gototop();
+      $(".gototop").gototop({
+        position: 0,
+        duration: 1250,
+        visibleAt: 300,
+        classname: "isvisible"
+      });
     });
   </script>
 
