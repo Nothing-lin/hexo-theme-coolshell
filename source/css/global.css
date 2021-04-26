@@ -52,3 +52,9 @@
     width: 20px !important;
     height: 20px !important;
 }
+
+/* toc滚动条 */
+.sidebar-toc-container::-webkit-scrollbar {
+  /*改变纵向滚动条宽度*/
+    width: 0.1px;
+}
