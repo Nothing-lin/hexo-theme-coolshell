@@ -26,109 +26,35 @@
 
   <div class="links-content-container">
 
+    <% theme.friend_links.forEach(function (item) {%>
     <div class="links-item-container">
       <div class="links-item-uper-container">
         <div class="links-item-uper-left-container">
-          <a href="#"><img src="/img/avatar.jpg" alt="avatar"></a>
+          <a href="<%- item.blog_href%>"><img src="<%- url_for(item.avatar) %>" alt="avatar"></a>
         </div>
         <div class="links-item-uper-right-container">
           <div class="links-item-uper-right-title-container">
-            <a href="#"><span><strong>Nothinglin的个人博客</strong></span></a>
+            <a href="<%- item.blog_href%>"><span><strong><%- item.name%></strong></span></a>
           </div>
-          <div class="links-item-uper-right-link-container">
-            <a href="#" class="links-hreh links-ico"><i class="links-ico-github ico-size"></i></a>
-            <a href="#" class="links-hreh links-ico"><i class="links-ico-zhihu ico-size"></i></a>
-            <a href="#" class="links-hreh links-ico"><i class="links-ico-wechat ico-size"></i></a>
-            <a href="#" class="links-hreh links-ico"><i class="links-ico-csdn ico-size"></i></a>
-            <a href="#" class="links-hreh links-ico"><i class="links-ico-rss ico-size"></i></a>
-            <a href="#" class="links-hreh links-ico"><i class="links-ico-weibo ico-size"></i></a>
-            <a href="#" class="links-hreh links-ico"><i class="links-ico-jianshu ico-size"></i></a>
-            <a href="#" class="links-hreh links-ico"><i class="links-ico-public ico-size"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="links-item-lower-container">
-        <span>Nothinglin目前还是一名大学生，2020年还是大一的时候开始接触GitHub和博客，一年多后开始设计前端博客，喜欢分享自己学会的知识，座右铭是：“不积跬步无以至千里，后继才能薄发”</span>
-      </div>
-    </div>
 
-    <div class="links-item-container">
-      <div class="links-item-uper-container">
-        <div class="links-item-uper-left-container">
-          <a href="#"><img src="/img/avatar.jpg" alt="avatar"></a>
-        </div>
-        <div class="links-item-uper-right-container">
-          <div class="links-item-uper-right-title-container">
-            <a href="#"><span><strong>Nothinglin的个人博客</strong></span></a>
-          </div>
           <div class="links-item-uper-right-link-container">
-            <a href="#" class="links-hreh links-ico"><i class="links-ico-github ico-size"></i></a>
-            <a href="#" class="links-hreh links-ico"><i class="links-ico-zhihu ico-size"></i></a>
-            <a href="#" class="links-hreh links-ico"><i class="links-ico-wechat ico-size"></i></a>
-            <a href="#" class="links-hreh links-ico"><i class="links-ico-csdn ico-size"></i></a>
-            <a href="#" class="links-hreh links-ico"><i class="links-ico-rss ico-size"></i></a>
-            <a href="#" class="links-hreh links-ico"><i class="links-ico-weibo ico-size"></i></a>
-            <a href="#" class="links-hreh links-ico"><i class="links-ico-jianshu ico-size"></i></a>
-            <a href="#" class="links-hreh links-ico"><i class="links-ico-public ico-size"></i></a>
+            <% item.links_ico.forEach(function (e) {%>
+            <a href="<%- e.href%>" class="links-hreh links-ico">
+              <i class="links-ico-<%- e.ico%> ico-size"></i>
+            </a>
+            <%})%>
           </div>
-        </div>
-      </div>
-      <div class="links-item-lower-container">
-        <span>Nothinglin目前还是一名大学生，2020年还是大一的时候开始接触GitHub和博客，一年多后开始设计前端博客，喜欢分享自己学会的知识，座右铭是：“不积跬步无以至千里，后继才能薄发”</span>
-      </div>
-    </div>
 
-    <div class="links-item-container">
-      <div class="links-item-uper-container">
-        <div class="links-item-uper-left-container">
-          <a href="#"><img src="/img/avatar.jpg" alt="avatar"></a>
-        </div>
-        <div class="links-item-uper-right-container">
-          <div class="links-item-uper-right-title-container">
-            <a href="#"><span><strong>Nothinglin的个人博客</strong></span></a>
-          </div>
-          <div class="links-item-uper-right-link-container">
-            <a href="#" class="links-hreh links-ico"><i class="links-ico-github ico-size"></i></a>
-            <a href="#" class="links-hreh links-ico"><i class="links-ico-zhihu ico-size"></i></a>
-            <a href="#" class="links-hreh links-ico"><i class="links-ico-wechat ico-size"></i></a>
-            <a href="#" class="links-hreh links-ico"><i class="links-ico-csdn ico-size"></i></a>
-            <a href="#" class="links-hreh links-ico"><i class="links-ico-rss ico-size"></i></a>
-            <a href="#" class="links-hreh links-ico"><i class="links-ico-weibo ico-size"></i></a>
-            <a href="#" class="links-hreh links-ico"><i class="links-ico-jianshu ico-size"></i></a>
-            <a href="#" class="links-hreh links-ico"><i class="links-ico-public ico-size"></i></a>
-          </div>
         </div>
       </div>
-      <div class="links-item-lower-container">
-        <span>Nothinglin目前还是一名大学生，2020年还是大一的时候开始接触GitHub和博客，一年多后开始设计前端博客，喜欢分享自己学会的知识，座右铭是：“不积跬步无以至千里，后继才能薄发”</span>
-      </div>
-    </div>
 
-    <div class="links-item-container">
-      <div class="links-item-uper-container">
-        <div class="links-item-uper-left-container">
-          <a href="#"><img src="/img/avatar.jpg" alt="avatar"></a>
-        </div>
-        <div class="links-item-uper-right-container">
-          <div class="links-item-uper-right-title-container">
-            <a href="#"><span><strong>Nothinglin的个人博客</strong></span></a>
-          </div>
-          <div class="links-item-uper-right-link-container">
-            <a href="#" class="links-hreh links-ico"><i class="links-ico-github ico-size"></i></a>
-            <a href="#" class="links-hreh links-ico"><i class="links-ico-zhihu ico-size"></i></a>
-            <a href="#" class="links-hreh links-ico"><i class="links-ico-wechat ico-size"></i></a>
-            <a href="#" class="links-hreh links-ico"><i class="links-ico-csdn ico-size"></i></a>
-            <a href="#" class="links-hreh links-ico"><i class="links-ico-rss ico-size"></i></a>
-            <a href="#" class="links-hreh links-ico"><i class="links-ico-weibo ico-size"></i></a>
-            <a href="#" class="links-hreh links-ico"><i class="links-ico-jianshu ico-size"></i></a>
-            <a href="#" class="links-hreh links-ico"><i class="links-ico-public ico-size"></i></a>
-          </div>
-        </div>
-      </div>
       <div class="links-item-lower-container">
-        <span>Nothinglin目前还是一名大学生，2020年还是大一的时候开始接触GitHub和博客，一年多后开始设计前端博客，喜欢分享自己学会的知识，座右铭是：“不积跬步无以至千里，后继才能薄发”</span>
+        <span><%- item.introduction%></span>
       </div>
-    </div>
 
+    </div>
+    <%})%>
   </div>
+
+
 </div>
