@@ -1,14 +1,43 @@
+<!-- 这一段判断语句是判断当前页是不是在文章页post上，如果在的话就显示文章目录结构 -->
+<% if(is_post()){ %>
+
+<% } else { %>
 <div class="sidebar-announce">
   <div class="sidebar-announce-container">
     <div class="sidebar-announce-header">
-      <span>公告</span>
+      <span class="sidebar-announce-header-title">公告</span>
     </div>
     <div class="sidebar-announce-content">
       <p>这几天更新GitHub系列教程</p>
     </div>
   </div>
 </div>
+<% } %>
 
+<!-- 这一段判断语句是判断当前页是不是在文章页post上，如果在的话就显示文章目录结构 -->
+<% if(is_post()){ %>
+<!-- 这部分是toc模块，因为相关代码和公告栏代码类似，所以直接使用公告栏的框架了 -->
+<div class="sidebar-announce sidebar-toc">
+  <div class="sidebar-announce-container">
+    <div class="sidebar-announce-header">
+      <span class="sidebar-announce-header-title">文章目录</span>
+    </div>
+    <div class="sidebar-toc-container">
+      <div class="sidebar-toc-content">
+        <%- toc(page.content,{list_number:false}) %>
+      </div>
+    </div>
+  </div>
+</div>
+<% } else { %>
+
+<% } %>
+
+
+<!-- 这一段判断语句是判断当前页是不是在文章页post上，如果在的话就显示文章目录结构 -->
+<% if(is_post()){ %>
+
+<% } else { %>
 <div class="author-info">
   <div class="author-header">
     <span>博主简介</span>
@@ -44,33 +73,39 @@
   </div>
 
 </div>
+<% } %>
 
-<% if(is_page()){ %>
+
+<% if(is_page() || is_post()){ %>
 
 <% } else { %>
-  <div class="aritcle-category">
-    <div class="aritcle-category-header">
-      <span>文章分类</span>
-    </div>
-
-    <div class="aritcle-category-section">
-      <ul id="tree">
-        <% site.categories.each(function(item) { %>
-        <li>
-          <a class="collapse" href="#"><%=item.name%></a>
-          <ul>
-            <% item.posts.sort('date', 'desc').each(function(e){ %>
-            <li>
-              <a href="<%- url_for(e.path) %>" title="<%=e.title%>"><%- truncate(e.title || '该文章无标题', {length: 15, omission: '···'}) %></a>
-            </li>
-            <% }) %>
-          </ul>
-        </li>
-        <% }) %>
-      </ul>
-    </div>
+<div class="aritcle-category">
+  <div class="aritcle-category-header">
+    <span>文章分类</span>
   </div>
+
+  <div class="aritcle-category-section">
+    <ul id="tree">
+      <% site.categories.each(function(item) { %>
+      <li>
+        <a class="collapse" href="#"><%=item.name%></a>
+        <ul>
+          <% item.posts.sort('date', 'desc').each(function(e){ %>
+          <li>
+            <a href="<%- url_for(e.path) %>" title="<%=e.title%>"><%- truncate(e.title || '该文章无标题', {length: 15, omission: '···'}) %></a>
+          </li>
+          <% }) %>
+        </ul>
+      </li>
+      <% }) %>
+    </ul>
+  </div>
+</div>
 <% } %>
+
+<% if(is_page() || is_post()){ %>
+
+<% } else { %>
 <div class="sidebar-subscribe">
   <div class="sidebar-subscribe-header">
     <span>公众号订阅作者</span>
@@ -80,3 +115,4 @@
     <img src="<%- url_for('/img/subscribe.jpg') %>" alt="苦逼的学生仔">
   </div>
 </div>
+<% } %>
