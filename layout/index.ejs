@@ -1,40 +1,57 @@
-
 <% page.posts.each(function(post){ %>
 
 <div class="section-postlist">
 
-	<div class="postlist-content">
-		<div class="postlist-title">
-			<a href="<%- url_for(post.path) %>">
-				<%- truncate(post.title || '该文章无标题', {length: 27, omission: '···'}) %>
-			</a>
-		</div>
+  <div class="postlist-content">
+    <div class="postlist-title">
+      <a href="<%- url_for(post.path) %>">
+        <%- truncate(post.title || '该文章无标题', {length: 27, omission: '···'}) %>
+      </a>
+    </div>
 
-		<div class="postlist-intro">
-			<div class="postlist-intro-container">
-				<a href="<%- url_for(post.path) %>">
-					<%- truncate(strip_html(post.content),{length: 130,omission: '...'}) %>...
-				</a>
-			</div>
-		</div>
+    <div class="postlist-intro">
+      <div class="postlist-intro-container">
+        <a href="<%- url_for(post.path) %>">
+          <%- truncate(strip_html(post.content),{length: 130,omission: '...'}) %>...
+        </a>
+      </div>
+    </div>
 
-		<div class="postlist-info">
-			<ul>
-				<li><div class="datatime"></div><%- date(post.date,"YYYY年MM月DD日") %></li>
-				<li><div class="author"></div><%- post.author -%></li>
-				<li><div class="comment"></div>11条评论</li>
-				<li><div class="readnumbers"></div>17，096人阅读</li>
-			</ul>
-		</div>
-	</div>
+    <div class="postlist-info">
+      <ul>
+        <li>
+          <div class="datatime"></div><%- date(post.date,"YYYY年MM月DD日") %>
+        </li>
+        <li>
+          <div class="author"></div><%- post.author -%>
+        </li>
+        <li>
+          <div class="category"></div>
+          <% if(post.categories.length){ %>
+          <%- list_tags(post.categories, {
+										show_count: false,
+										style: 'none',
+										separator: ' ',
+										amount: 5
+								}) %>
+          <% } else { %>
+          <%= '空' %>
+          <% } %>
+        </li>
+        <li>
+          <div class="readnumbers"></div>17，096人阅读
+        </li>
+      </ul>
+    </div>
+  </div>
 
-	<div class="postlist-picture-container">
-		<div class="postlist-picture">
-			<a href="<%- url_for(post.path) %>">
-			<img src="../img/default.png" alt="default">
-			</a>
-		</div>
-	</div>
+  <div class="postlist-picture-container">
+    <div class="postlist-picture">
+      <a href="<%- url_for(post.path) %>">
+        <img src="../img/default.png" alt="default">
+      </a>
+    </div>
+  </div>
 </div>
 <% }) %>
 

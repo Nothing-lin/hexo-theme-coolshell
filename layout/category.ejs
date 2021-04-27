@@ -1,5 +1,22 @@
-<% page.posts.each(function(post){ %>
-<div class="post-content">
-  <%- post.title %>
+<div class="archive-container">
+  <div class="article-header">
+    <div class="article-header-container">
+      <div class="article-header-title category-page">
+        <span><%= page.category %></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="archive-content">
+    <% page.posts.sort('date', 'desc').each(function(e){ %>
+    <ul>
+      <li>
+        <span class="archive-span-date">[<%- date(e.date,"YYYY/MM/DD") %>]</span>
+        <strong><a href="<%- url_for(e.path) %>"><%- e.title %></a></strong>
+        <span class="archive-span-author">—</span>
+        <span><%- e.author %></span>
+      </li>
+    </ul>
+    <% }) %>
+  </div>
 </div>
-<% }) %>

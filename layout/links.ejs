@@ -1,30 +1,18 @@
 <div class="article-container">
   <div class="article-header">
     <div class="article-header-container">
-      <div class="article-header-title">
+      <div class="article-header-title links-page">
         <span><%= page.title||'该文章没有标题' %></span>
-      </div>
-
-      <div class="article-header-meta">
-        <ul>
-          <li>
-            <div class="datatime"></div>2021年4月16日
-          </li>
-          <li>
-            <div class="author"></div>nothinglin
-          </li>
-          <li>
-            <div class="comment"></div>11条评论
-          </li>
-          <li>
-            <div class="readnumbers"></div>17，096人阅读
-          </li>
-        </ul>
       </div>
     </div>
   </div>
 
   <div class="links-content-container">
+    <div class="links-attention">
+      <blockquote>
+        <p>这里是友链页面，友链可以为我们的博友进行博客的推广，区别于其他博客友链的类型，我还添加了博友的相关的知乎平台、CSDN平台还有简书等等平台来对博友进行推广的功能，下边还可以对博友进行一句话介绍非常新颖。</p>
+      </blockquote>
+    </div>
 
     <% theme.friend_links.forEach(function (item) {%>
     <div class="links-item-container">

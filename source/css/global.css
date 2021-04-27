@@ -15,11 +15,12 @@
 /* 滚动条样式 */
 ::-webkit-scrollbar {
   /*改变纵向滚动条宽度*/
-    height: 1px;
-    width: 10px;
+  height: 1px;
+  width: 10px;
 }
+
 ::-webkit-scrollbar-track {
-    /*改变滚动条轨道颜色*/
+  /*改变滚动条轨道颜色*/
   background-color: #F0F0F0;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
 }
@@ -38,23 +39,36 @@
 
 /* 重新调整code的字体大小 */
 .enlighter span {
-    font-size: 14px !important;
+  font-size: 14px !important;
 }
+
 /* 重新定义code与字体间的间距 */
 .enlighter-t-enlighter {
-    margin-left: 4px !important;
-    margin-right: 4px !important;
+  margin-left: 4px !important;
+  margin-right: 4px !important;
 }
+
 /* 调整代码框复制按钮的布局位置 */
 .enlighter-t-enlighter .enlighter-btn {
-    margin-top: -10px !important;
-    margin-right: -5px !important;
-    width: 20px !important;
-    height: 20px !important;
+  margin-top: -10px !important;
+  margin-right: -5px !important;
+  width: 20px !important;
+  height: 20px !important;
 }
 
 /* toc滚动条 */
 .sidebar-toc-container::-webkit-scrollbar {
   /*改变纵向滚动条宽度*/
-    width: 0.1px;
+  width: 0.1px;
+}
+
+/* 关于页面相关设置 */
+.about-page {
+  text-align: justify;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2.5px;
+  border-bottom-color: #009688;
+  padding-bottom: 15px;
 }

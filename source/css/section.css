@@ -143,13 +143,34 @@ section {
   margin-right: 3px;
 }
 
-.comment {
-  background: url(../img/comments.png);
+.category {
+  background: url(../img/category.png);
   background-size: 100% 100%;
   width: 15px;
   height: 15px;
   margin-top: 3px;
   margin-right: 3px;
+}
+
+
+.tag {
+  background: url(../img/tag.png);
+  background-size: 100% 100%;
+  width: 15px;
+  height: 15px;
+  margin-top: 3px;
+  margin-right: 3px;
+}
+
+a.tag-none-link {
+  text-decoration: none;
+  color: #5c5c53;
+  padding-right: 5px;
+}
+
+a.tag-none-link:hover {
+  text-decoration: none;
+  color: #F4A81E;
 }
 
 .readnumbers {

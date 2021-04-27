@@ -2,30 +2,18 @@
 
   <div class="article-header">
     <div class="article-header-container">
-      <div class="article-header-title">
+      <div class="article-header-title tags-page">
         <span><%= '文章标签列表' %></span>
-      </div>
-
-      <div class="article-header-meta">
-        <ul>
-          <li>
-            <div class="datatime"></div>2021年4月16日
-          </li>
-          <li>
-            <div class="author"></div>nothinglin
-          </li>
-          <li>
-            <div class="comment"></div>11条评论
-          </li>
-          <li>
-            <div class="readnumbers"></div>17，096人阅读
-          </li>
-        </ul>
       </div>
     </div>
   </div>
 
   <div class="tag-menu">
+    <div class="tags-attention">
+      <blockquote>
+        <p>标签页看似与分类页面相似，但是标签的作用就是帮您快速定位你的文章主题，如果你的文章是关于hexo的，那么你就可以打个hexo标签。和分类页最大的区别就是，分类页是构建你的知识系统，而标签页是构建你的主题系统。比如：《hexo入门系列》就是一个分类，涉及到的主题就是hexo，可以为标签打上一个hexo。</p>
+      </blockquote>
+    </div>
     <ul id="tree">
       <% site.tags.sort('date', 'desc').each(function(item) { %>
       <li class="tag-index-title">

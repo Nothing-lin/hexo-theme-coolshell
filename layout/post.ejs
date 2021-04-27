@@ -8,16 +8,39 @@
       <div class="article-header-meta">
         <ul>
           <li>
-            <div class="datatime"></div>2021年4月16日
+            <div class="datatime"></div><%- date(page.date,"YYYY年MM月DD日") %>
           </li>
           <li>
-            <div class="author"></div>nothinglin
-          </li>
-          <li>
-            <div class="comment"></div>11条评论
+            <div class="author"></div><%- page.author -%>
           </li>
           <li>
             <div class="readnumbers"></div>17，096人阅读
+          </li>
+          <li>
+            <div class="category"></div>
+            <% if(page.categories.length){ %>
+            <%- list_tags(page.categories, {
+  										show_count: false,
+  										style: 'none',
+  										separator: ' ',
+  										amount: 5
+  								}) %>
+            <% } else { %>
+            <%= '空' %>
+            <% } %>
+          </li>
+          <li>
+            <div class="tag"></div>
+            <% if(page.tags.length){ %>
+            <%- list_tags(page.tags, {
+  										show_count: false,
+  										style: 'none',
+  										separator: ' ',
+  										amount: 5
+  								}) %>
+            <% } else { %>
+            <%= '空' %>
+            <% } %>
           </li>
         </ul>
       </div>
