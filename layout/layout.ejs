@@ -25,6 +25,7 @@
   <%- js('js/menutree.js') %>
   <%- js('js/jquery.gototop.min.js') %>
   <%- js('js/nav-show-always.js') %>
+  <%- js('js/search.js') %>
   <%- js('js/enlighterjs.min.js') %>
   <script type="text/javascript">
     // INIT CODE - simple page-wide initialization based on css selectors
@@ -53,6 +54,13 @@
     });
   </script>
 
+  <script type="text/javascript">
+    if ($('.local-search').length) {
+      $.getScript('/js/search.js', function() {
+        searchFunc("/search.xml", 'local-search-input', 'local-search-result');
+      });
+    }
+  </script>
 </body>
 
 </html>

@@ -57,7 +57,7 @@
 }
 
 /* toc滚动条 */
-.sidebar-toc-container::-webkit-scrollbar {
+.sidebar-toc-container::-webkit-scrollbar, .search-result-list::-webkit-scrollbar {
   /*改变纵向滚动条宽度*/
   width: 0.1px;
 }
