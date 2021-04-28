@@ -207,3 +207,29 @@
   justify-content: space-between;
   border-radius: 15px;
 }
+
+.article-content-footer {
+  width: 703px;
+  height: auto;
+  padding: 18px 72px;
+  margin-top: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.article-content-footer a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: bolder;
+}
+
+.article-content-footer a:hover {
+  text-decoration: none;
+  color: #F4A923;
+  font-weight: bolder;
+}
+
+.article-pre-next {
+  margin-top: 20px;
+}
