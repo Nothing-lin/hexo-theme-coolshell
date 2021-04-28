@@ -59,6 +59,7 @@
   margin-left: 72px;
   margin-right: 72px;
   height: auto;
+  padding-bottom: 30px;
 }
 
 .article-markdown-content img {
@@ -232,4 +233,29 @@
 
 .article-pre-next {
   margin-top: 20px;
+}
+
+.article-score {
+  width: 703px;
+  height: auto;
+  padding: 18px 72px;
+  border-top-style: solid;
+  border-top-width: 0.2px;
+  border-top-color: #33333326;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-score span {
+  font-style: italic;
+  color: #787272c9;
+}
+
+.article-score .article-rating-p1 {
+  padding-bottom: 10px;
+}
+
+.article-score .article-rating-p2 {
+  padding-top: 10px;
 }
