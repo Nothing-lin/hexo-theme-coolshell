@@ -60,8 +60,8 @@
       <%- partial('_partial/widgetpack') %>
       <% } %>
     </div>
-      <span>原文声明: "转载本站文章请注明作者和出处 酷 壳 – CoolShell ，请勿用于任何商业用途"</span>
-      <p class="article-rating-p2">微信公众号：苦逼的学生仔</p>
+    <span>原文声明: "转载本站文章请注明作者和出处 酷 壳 – CoolShell ，请勿用于任何商业用途"</span>
+    <p class="article-rating-p2">微信公众号：苦逼的学生仔</p>
   </div>
 
 </div>
@@ -83,6 +83,28 @@
   </div>
 </div>
 
+<% if(popular_posts({} , page)){ %>
+<div class="article-container relating-article">
+  <div class="relating-article-header">
+    <span>相关文章</span>
+  </div>
+  <!-- 文章相关插件，关于tab -->
+  <%- popular_posts( {maxCount: 4, isImage: true, isExcerpt: true} , page )%>
+</div>
+<% } else { %>
+
+<div class="article-container relating-article">
+  <div class="relating-article-header">
+    <span>相关文章</span>
+  </div>
+
+  <div class="article-content-footer none-relating-article">
+    <p>😭没有找到同一标签下和这篇文章相关的文章哦~</p>
+  </div>
+  <!-- 文章相关插件，关于tab -->
+  <%- popular_posts( {maxCount: 4, isImage: true, isExcerpt: true} , page )%>
+</div>
+<% } %>
 
 <!-- 评论系统 -->
 <% if (theme.livere.enable && page.comments){ %>

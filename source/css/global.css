@@ -13,25 +13,25 @@
 
 /* 修改代码框的水平宽度 */
 /* 滚动条样式 */
-::-webkit-scrollbar {
+.enlighter-default::-webkit-scrollbar {
   /*改变纵向滚动条宽度*/
   height: 1px;
   width: 10px;
 }
 
-::-webkit-scrollbar-track {
+.enlighter-default::-webkit-scrollbar-track {
   /*改变滚动条轨道颜色*/
   background-color: #F0F0F0;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
 }
 
-::-webkit-scrollbar-thumb:hover {
+.enlighter-default::-webkit-scrollbar-thumb:hover {
   border-radius: 5px;
   background-color: #A3A3A3;
   -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-::-webkit-scrollbar-thumb {
+.enlighter-default::-webkit-scrollbar-thumb {
   /*改变滚动条滑轨相关的样式*/
   border-radius: 5px;
   background-color: #7b848c4a;

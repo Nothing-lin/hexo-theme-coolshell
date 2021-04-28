@@ -24,7 +24,11 @@
     </div>
     <div class="sidebar-toc-container">
       <div class="sidebar-toc-content">
+        <% if(toc(page.content)){ %>
         <%- toc(page.content,{list_number:false}) %>
+        <% } else { %>
+        <p>此文章没有目录哦~</p>
+        <% } %>
       </div>
     </div>
   </div>
