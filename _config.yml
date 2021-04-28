@@ -49,3 +49,9 @@ friend_links:
        ico: zhihu
    blog_href: https://www.nothinglin.ml
    introduction: “不积跬步无以至千里，后继才能薄发”
+
+# 来必力评论系统
+# livere配置
+livere:
+  enable: true
+  uid: MTAyMC81MzA1OS8yOTUzNQ==

@@ -50,3 +50,12 @@
     <%- page.content %>
   </div>
 </div>
+
+<!-- 评论系统 -->
+<% if (theme.livere.enable && page.comments){ %>
+<div class="article-container article-comments">
+  <div class="article-comments-container">
+    <%- partial('_partial/comments/livere')%>
+  </div>
+</div>
+<% } %>
