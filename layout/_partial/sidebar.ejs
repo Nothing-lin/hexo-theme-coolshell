@@ -91,7 +91,7 @@
   <div class="aritcle-category-section">
     <ul id="tree">
       <% site.categories.each(function(item) { %>
-      <li>
+      <li class="category-index-title">
         <a class="collapse" href="#"><%=item.name%></a>
         <ul>
           <% item.posts.sort('date', 'desc').each(function(e){ %>
