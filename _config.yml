@@ -64,3 +64,10 @@ widgetpack:
   enable: true #false
   id: 30332 #<app_id>
   color:  fc6423
+
+# leancloud统计
+# add post views
+leancloud_visitors:
+  enable: true
+  app_id: VyzXf1kCRUkA4hAjMLghgNzS-gzGzoHsz
+  app_key: OXYxxWQX15MwlNF0wsW4kyXX

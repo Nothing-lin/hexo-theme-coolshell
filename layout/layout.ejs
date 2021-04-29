@@ -53,7 +53,7 @@
       });
     });
   </script>
-
+  <!-- 站内搜索 -->
   <script type="text/javascript">
     if ($('.local-search').length) {
       $.getScript('/js/search.js', function() {
@@ -61,6 +61,8 @@
       });
     }
   </script>
+
+  <%- partial('_partial/script/leancloud') %>
 </body>
 
 </html>

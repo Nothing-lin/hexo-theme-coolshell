@@ -14,7 +14,10 @@
             <div class="author"></div><%- page.author -%>
           </li>
           <li>
-            <div class="readnumbers"></div>17，096人阅读
+            <div class="readnumbers"></div>
+            <% if(theme.leancloud_visitors.enable){ %>阅读量:
+            <span id="<%= url_for(page.path) %>" class="leancloud_visitors" data-flag-title="<%- page.title %>"></span>次
+            <% } %>
           </li>
           <li>
             <div class="category"></div>
