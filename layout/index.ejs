@@ -1,11 +1,13 @@
 <% page.posts.each(function(post){ %>
 
 <div class="section-postlist">
-
   <div class="postlist-content">
     <div class="postlist-title">
       <a href="<%- url_for(post.path) %>">
-        <%- truncate(post.title || '该文章无标题', {length: 27, omission: '···'}) %>
+        <% if(post.sticky){ %>
+        [置顶]
+        <% } %>
+        <%- truncate(post.title || '该文章无标题', {length: 27, omission: '...'}) %>
       </a>
     </div>
 
@@ -39,7 +41,10 @@
           <% } %>
         </li>
         <li>
-          <div class="readnumbers"></div>17，096人阅读
+          <div class="readnumbers"></div>
+          <% if(theme.leancloud_visitors.enable){ %>阅读量:
+          <span id="<%= url_for(post.path) %>" class="leancloud_visitors" data-flag-title="<%- post.title %>"></span>次
+          <% } %>
         </li>
       </ul>
     </div>
