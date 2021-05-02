@@ -23,7 +23,7 @@ nav {
 }
 
 .navbar-brand-logo {
-  background: url(../img/coolshell.png);
+  background: url(../img/logo.ico);
   background-size: 100% 100%;
   width: 30px;
   height: 30px;
@@ -100,14 +100,14 @@ nav {
   display: flex;
   flex-direction: column;
   height: 50px;
-  width: 630px;
+  width: 800px;
   margin: auto;
   text-align: center;
 }
 
 .cover-brand {
   color: #FFFFFF;
-  font-size: 63px;
+  font-size: 50px;
   font-weight: bold;
   letter-spacing: 8px;
   padding-top: 30px;

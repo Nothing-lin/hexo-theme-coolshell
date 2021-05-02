@@ -1,8 +1,10 @@
 root: /
 
 ## favicon
-favicon: img/favicon.ico
-
+favicon: img/logo.ico
+logo_title: 苦逼的学生仔 - Nothinglin
+words_title: 苦逼的学生仔 - Nothinglin
+subwords_title: 开放视野、解放思维、不固步自封 - Nothing is impossible for lin
 ## Feed
 rss: /atom.xml
 
