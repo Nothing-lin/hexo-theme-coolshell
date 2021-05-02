@@ -27,6 +27,7 @@
   <%- js('js/nav-show-always.js') %>
   <%- js('js/search.js') %>
   <%- js('js/enlighterjs.min.js') %>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script type="text/javascript">
     // INIT CODE - simple page-wide initialization based on css selectors
     // - highlight all pre + code tags (CSS3 selectors)
@@ -60,6 +61,18 @@
         searchFunc("/search.xml", 'local-search-input', 'local-search-result');
       });
     }
+  </script>
+  <!-- 实现fancybox的脚本 -->
+  <script type="text/javascript">
+    // 集成fancybox, 为所有img元素添加父元素
+
+    $("img").each(function () {
+       // $(this).attr("data-fancybox", "gallery"); 直接给img添加data-fancybox会导致点击图片后图片消失
+        var element = document.createElement("a");
+        $(element).attr("data-fancybox", "gallery");
+        $(element).attr("href", $(this).attr("src"));
+        $(this).wrap(element);
+    });
   </script>
 
   <%- partial('_partial/script/leancloud') %>
