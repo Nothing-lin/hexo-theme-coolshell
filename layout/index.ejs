@@ -40,20 +40,14 @@
           <%= '空' %>
           <% } %>
         </li>
-        <li>
-          <div class="readnumbers"></div>
-          <% if(theme.leancloud_visitors.enable){ %>阅读量:
-          <span id="<%= url_for(post.path) %>" class="leancloud_visitors" data-flag-title="<%- post.title %>"></span>次
-          <% } %>
-        </li>
       </ul>
     </div>
   </div>
 
   <div class="postlist-picture-container">
     <div class="postlist-picture">
-      <a href="<%- url_for(post.path) %>">
-        <img src="../img/default.png" alt="default">
+      <a href="<%= url_for(post.path) %>">
+        <img src="<%= url_for(post.index_img) %>" alt="<%= url_for(post.title) %>">
       </a>
     </div>
   </div>

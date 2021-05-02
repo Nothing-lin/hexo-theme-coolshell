@@ -1,5 +1,11 @@
 root: /
 
+## favicon
+favicon: img/favicon.ico
+
+## Feed
+rss: /atom.xml
+
 ## 博主个人社交平台链接设置
 social:
  - name: Github
