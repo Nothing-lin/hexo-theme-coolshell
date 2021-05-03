@@ -5,13 +5,15 @@
   }
 
   .navbar-container {
-    width: 100%;
+    width: 900px;
   }
 
   .navbar-menu {
-    display: none;
+    /* display: none; */
   }
-
+  .navbar-brand {
+      height: 100%;
+  }
   .cover {
     width: 100%;
     min-height: 160px;
@@ -47,7 +49,7 @@
   .section-postlist {
     width: 100% !important;
     display: flex !important;
-    flex-direction: column !important;
+    flex-direction: column-reverse !important;
     margin-bottom: 20px !important;
   }
 
@@ -67,16 +69,17 @@
 
   .postlist-title {
     width: 85% !important;
+    height: auto!important;
     text-align: center;
     margin-left: 0px !important;
     margin: auto !important;
-    padding-bottom: 10px !important;
-    padding-top: 15px !important;
+    padding-bottom: 20px !important;
+    padding-top: 0px !important;
   }
 
   .postlist-title a {
-    padding-bottom: 15px !important;
-    padding-top: 15px !important;
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
     font-size: 15px !important;
   }
 
@@ -224,5 +227,128 @@
 
   .article-header span {
     font-size: 20px;
+  }
+
+  .category-menu {
+    width: 90%;
+    padding: 0px;
+    margin: auto;
+  }
+
+  .categories-attention blockquote {
+    font-size: 14px !important;
+    width: 86% !important;
+    padding: 5px 10px 5px 26px !important;
+  }
+
+  .categories-attention blockquote:before {
+    left: 5px !important;
+    top: -10px !important;
+    font-size: 3.4em !important;
+    position: absolute;
+  }
+
+  #tree {
+    margin-left: 0px !important;
+  }
+
+  #tree>li {
+    width: 95%;
+    list-style: none !important;
+    font-size: 14px;
+  }
+
+  .category-menu ul li {
+    width: 100% !important;
+    font-size: 14px !important;
+  }
+
+  #tree li ul {
+    margin: .5em 0em .5em 5px !important;
+  }
+
+  .tag-menu {
+    width: 90%;
+    padding: 0px;
+    margin: auto;
+  }
+
+  .tags-attention blockquote {
+    font-size: 14px !important;
+    width: 86% !important;
+    padding: 5px 10px 5px 26px !important;
+  }
+
+  .tags-attention blockquote:before {
+    left: 5px !important;
+    top: -10px !important;
+    font-size: 3.4em !important;
+    position: absolute;
+  }
+
+  .tag-menu ul li {
+    width: 100% !important;
+    font-size: 14px !important;
+  }
+
+  .archive-content {
+    width: 90%;
+    padding: 0px;
+    margin: auto;
+  }
+
+  .archive-attention blockquote {
+    font-size: 14px !important;
+    width: 86% !important;
+    padding: 5px 10px 5px 26px !important;
+  }
+
+  .archive-attention blockquote:before {
+    left: 5px !important;
+    top: -10px !important;
+    font-size: 3.4em !important;
+    position: absolute;
+  }
+
+  .archive-content ul {
+    font-size: 14px !important;
+  }
+
+  .links-content-container {
+    width: 90%;
+    padding: 0px;
+    margin: auto;
+  }
+
+  .links-attention blockquote {
+    font-size: 14px !important;
+    width: 86% !important;
+    padding: 5px 10px 5px 26px !important;
+    margin-left: 0px !important;
+  }
+
+  .links-attention blockquote:before {
+    left: 5px !important;
+    top: -10px !important;
+    font-size: 3.4em !important;
+    position: absolute;
+  }
+
+  .links-item-container {
+    width: 100% !important;
+  }
+
+  .navbar-brand-logo {
+    width: 25px !important;
+    height: 25px !important;
+    top: 0px!important;
+    left: 10px!important;
+  }
+  .navbar-brand-link span {
+      font-size: 17px!important;
+      margin-left: 10px!important;
+  }
+  nav{
+    overflow-x: auto;
   }
 }
