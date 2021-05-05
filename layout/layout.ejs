@@ -1,0 +1,81 @@
+<%- partial('_partial/head') %>
+
+<body>
+  <%- partial('_partial/header') %>
+
+  <section>
+    <div class="section-container">
+      <div class="section-postlist-container">
+        <%- body %>
+      </div>
+
+      <div class="section-sidebar">
+        <%- partial('_partial/sidebar') %>
+      </div>
+
+    </div>
+  </section>
+  <!-- gototop按钮 -->
+  <button class="gototop"><span>👆TOP</span></button>
+
+  <%- partial('_partial/footer') %>
+
+  <!-- 代码高亮插件 -->
+  <%- js('js/jquery-3.6.0.min.js') %>
+  <%- js('js/menutree.js') %>
+  <%- js('js/jquery.gototop.min.js') %>
+  <%- js('js/nav-show-always.js') %>
+  <%- js('js/search.js') %>
+  <%- js('js/enlighterjs.min.js') %>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script type="text/javascript">
+    // INIT CODE - simple page-wide initialization based on css selectors
+    // - highlight all pre + code tags (CSS3 selectors)
+    // - use javascript as default language
+    // - use theme "enlighter" as default theme
+    // - replace tabs with 2 spaces
+    EnlighterJS.init('pre', 'code', {
+      language: 'javascript',
+      theme: 'enlighter',
+      textOverflow: 'scroll',
+      indent: 2
+    });
+  </script>
+
+  <!-- gototop 脚本 -->
+  <script type="text/javascript">
+    $(function() {
+      // $(".gototop").gototop();
+      $(".gototop").gototop({
+        position: 0,
+        duration: 1250,
+        visibleAt: 300,
+        classname: "isvisible"
+      });
+    });
+  </script>
+  <!-- 站内搜索 -->
+  <script type="text/javascript">
+    if ($('.local-search').length) {
+      $.getScript('/js/search.js', function() {
+        searchFunc("/search.xml", 'local-search-input', 'local-search-result');
+      });
+    }
+  </script>
+  <!-- 实现fancybox的脚本 -->
+  <script type="text/javascript">
+    // 集成fancybox, 为所有img元素添加父元素
+
+    $("img").each(function () {
+       // $(this).attr("data-fancybox", "gallery"); 直接给img添加data-fancybox会导致点击图片后图片消失
+        var element = document.createElement("a");
+        $(element).attr("data-fancybox", "gallery");
+        $(element).attr("href", $(this).attr("src"));
+        $(this).wrap(element);
+    });
+  </script>
+
+  <%- partial('_partial/script/leancloud') %>
+</body>
+
+</html>

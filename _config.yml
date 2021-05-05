@@ -1,0 +1,81 @@
+root: /
+
+## favicon
+favicon: img/logo.ico
+logo_title: 苦逼的学生仔 - Nothinglin
+words_title: 苦逼的学生仔 - Nothinglin
+subwords_title: 开放视野、解放思维、不固步自封 - Nothing is impossible for lin
+## Feed
+rss: /atom.xml
+
+## 博主个人社交平台链接设置
+social:
+ - name: Github
+   icon: github
+   href: https://github.com/Nothing-lin
+ - name: 知乎
+   icon: zhihu
+   href: https://www.zhihu.com/people/nothing-86-28-47
+ - name: 微信
+   icon: wechat
+   href: /
+ - name: csdn
+   icon: csdn
+   href: /
+ - name: rss
+   icon: rss
+   href: /
+ - name: weibo
+   icon: weibo
+   href: /
+ - name: jianshu
+   icon: jianshu
+   href: /
+ - name: public
+   icon: public
+   href: /
+
+## 友链
+# 友链其他平台目前仅支持github、zhihu、wechat、csdn、rss、weibo、jianshu、public（公众号）
+friend_links:
+ - avatar: /img/avatar.jpg
+   name: Nothinglin的个人博客
+   links_ico:
+     - href: https://github.com/Nothing-lin
+       ico: github
+     - href: https://github.com/Nothing-lin
+       ico: zhihu
+   blog_href: https://www.nothinglin.ml
+   introduction: Nothinglin目前还是一名大学生，2020年还是大一的时候开始接触GitHub和博客，一年多后开始设计前端博客，喜欢分享自己学会的知识，座右铭是：“不积跬步无以至千里，后继才能薄发”
+
+ - avatar: /img/default.png
+   name: Nothinglin的个人博客
+   links_ico:
+     - href: https://github.com/Nothing-lin
+       ico: github
+     - href: https://github.com/Nothing-lin
+       ico: zhihu
+   blog_href: https://www.nothinglin.ml
+   introduction: “不积跬步无以至千里，后继才能薄发”
+
+# 来必力评论系统
+# livere配置
+livere:
+  enable: true
+  uid: MTAyMC81MzA1OS8yOTUzNQ==
+
+# 文章评分系统
+ # widgetpack。将 false 改为 widgetpack 上的 id 则启用该评论系统。
+ # Star rating support to each article.
+ # To get your ID visit https://widgetpack.com
+widgetpack:
+  enable: true #false
+  id: 30332 #<app_id>
+  color:  fc6423
+
+# leancloud统计
+# add post views
+leancloud_visitors:
+  enable: true
+  app_id: VyzXf1kCRUkA4hAjMLghgNzS-gzGzoHsz
+  app_key: OXYxxWQX15MwlNF0wsW4kyXX

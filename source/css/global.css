@@ -1,0 +1,78 @@
+/* 填充满边界 */
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: SourceSansPro,sans-serif; */
+}
+
+/* 插入字体 */
+@font-face {
+  font-family: SourceSansPro;
+  src: url(../lib/font/Source-Sans-Pro.ttf);
+}
+
+/* 修改代码框的水平宽度 */
+/* 滚动条样式 */
+.enlighter-default::-webkit-scrollbar {
+  /*改变纵向滚动条宽度*/
+  height: 1px;
+  width: 10px;
+}
+
+.enlighter-default::-webkit-scrollbar-track {
+  /*改变滚动条轨道颜色*/
+  background-color: #F0F0F0;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.enlighter-default::-webkit-scrollbar-thumb:hover {
+  border-radius: 5px;
+  background-color: #A3A3A3;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.enlighter-default::-webkit-scrollbar-thumb {
+  /*改变滚动条滑轨相关的样式*/
+  border-radius: 5px;
+  background-color: #7b848c4a;
+}
+
+/* 重新调整code的字体大小 */
+.enlighter span {
+  font-size: 14px !important;
+}
+
+/* 重新定义code与字体间的间距 */
+.enlighter-t-enlighter {
+  margin-left: 4px !important;
+  margin-right: 4px !important;
+}
+
+/* 调整代码框复制按钮的布局位置 */
+.enlighter-t-enlighter .enlighter-btn {
+  margin-top: -10px !important;
+  margin-right: -5px !important;
+  width: 20px !important;
+  height: 20px !important;
+}
+
+/* toc滚动条 */
+.sidebar-toc-container::-webkit-scrollbar, .search-result-list::-webkit-scrollbar {
+  /*改变纵向滚动条宽度*/
+  width: 0.1px;
+}
+
+/* 关于页面相关设置 */
+.about-page {
+  text-align: justify;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2.5px;
+  border-bottom-color: #009688;
+  padding-bottom: 15px;
+}
+
+.leancloud_visitors {
+  font-size: 14px !important;
+}

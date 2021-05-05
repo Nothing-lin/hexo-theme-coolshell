@@ -1,0 +1,31 @@
+<div class="category-container">
+  <div class="article-header">
+    <div class="article-header-container">
+      <div class="article-header-title category-page">
+        <span><%= '文章分类列表' %></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="category-menu">
+    <div class="categories-attention">
+      <blockquote>
+        <p>在这个分类页面中对你的文章进行分类，使你的全部文章进行系统化，构建你个人的知识系统！</p>
+      </blockquote>
+    </div>
+    <ul id="tree">
+      <% site.categories.each(function(item) { %>
+      <li class="category-index-title">
+        <a class="collapse" href="#"><%=item.name%> &nbsp -- &nbsp (<%=item.length%>) </a>
+        <ul>
+          <% item.posts.sort('date', 'desc').each(function(e){ %>
+          <li>
+            <a href="<%- url_for(e.path) %>" title="<%=e.title%>"> 📄 <%- e.title %></a>
+          </li>
+          <% }) %>
+        </ul>
+      </li>
+      <% }) %>
+    </ul>
+  </div>
+</div>

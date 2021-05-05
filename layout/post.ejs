@@ -1,0 +1,117 @@
+<div class="article-container">
+  <div class="article-header">
+    <div class="article-header-container">
+      <div class="article-header-title">
+        <span><%= page.title||'该文章没有标题' %></span>
+      </div>
+
+      <div class="article-header-meta">
+        <ul>
+          <li>
+            <div class="datatime"></div><%- date(page.date,"YYYY年MM月DD日") %>
+          </li>
+          <li>
+            <div class="author"></div><%- page.author -%>
+          </li>
+          <li>
+            <div class="readnumbers"></div>
+            <% if(theme.leancloud_visitors.enable){ %>阅读量:
+            <span id="<%= url_for(page.path) %>" class="leancloud_visitors" data-flag-title="<%- page.title %>"></span>次
+            <% } %>
+          </li>
+          <li>
+            <div class="category"></div>
+            <% if(page.categories.length){ %>
+            <%- list_tags(page.categories, {
+  										show_count: false,
+  										style: 'none',
+  										separator: ' ',
+  										amount: 5
+  								}) %>
+            <% } else { %>
+            <%= '空' %>
+            <% } %>
+          </li>
+          <li>
+            <div class="tag"></div>
+            <% if(page.tags.length){ %>
+            <%- list_tags(page.tags, {
+  										show_count: false,
+  										style: 'none',
+  										separator: ' ',
+  										amount: 5
+  								}) %>
+            <% } else { %>
+            <%= '空' %>
+            <% } %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="article-markdown-content">
+    <%- page.content %>
+  </div>
+
+  <div class="article-score">
+
+
+    <div class="article-rating">
+      <p class="article-rating-p1">如果喜欢这篇文章，可以给作者评个份哦~</p>
+      <!-- 评分 -->
+      <% if(theme.widgetpack.enable) { %>
+      <%- partial('_partial/widgetpack') %>
+      <% } %>
+    </div>
+    <span>原文声明: "转载本站文章请注明作者和出处 酷 壳 – CoolShell ，请勿用于任何商业用途"</span>
+    <p class="article-rating-p2">微信公众号：苦逼的学生仔</p>
+  </div>
+
+</div>
+
+<!-- 文章结尾处上一篇和下一篇文章功能 -->
+<div class="article-container article-pre-next">
+  <div class="article-content-footer">
+    <% if(page.prev){ %>
+    <a href="<%- url_for(page.prev.path) %>" title='<%- page.prev.title %>'>
+      <span>上一篇</span>
+    </a>
+    <% } %>
+
+    <% if(page.next){ %>
+    <a href="<%- url_for(page.next.path) %>" title='<%- page.next.title %>'>
+      <span>下一篇</span>
+    </a>
+    <% } %>
+  </div>
+</div>
+
+<% if(popular_posts({} , page)){ %>
+<div class="article-container relating-article">
+  <div class="relating-article-header">
+    <span>相关文章</span>
+  </div>
+  <!-- 文章相关插件，关于tab -->
+  <%- popular_posts( {maxCount: 4, isImage: true, isExcerpt: true} , page )%>
+</div>
+<% } else { %>
+
+<div class="article-container relating-article">
+  <div class="relating-article-header">
+    <span>相关文章</span>
+  </div>
+
+  <div class="article-content-footer none-relating-article">
+    <p>😭没有找到同一标签下和这篇文章相关的文章哦~</p>
+  </div>
+</div>
+<% } %>
+
+<!-- 评论系统 -->
+<% if (theme.livere.enable && page.comments){ %>
+<div class="article-container article-comments">
+  <div class="article-comments-container">
+    <%- partial('_partial/comments/livere')%>
+  </div>
+</div>
+<% } %>

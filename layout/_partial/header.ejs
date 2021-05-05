@@ -1,0 +1,53 @@
+<header>
+  <nav id="nav-show-always" class="clearfix">
+    <div class="navbar-container">
+      <div class="navbar-brand">
+        <a href="<%= config.root %>" class="navbar-brand-link">
+          <div class="navbar-brand-logo"></div>
+          <span><%= theme.logo_title %></span>
+        </a>
+      </div>
+
+
+      <div class="navbar-menu">
+        <ul class="nav-ul">
+          <li class="nav-li">
+            <a href="<%= config.root %>">主页</a>
+          </li>
+          <li class="nav-li">
+            <a href="<%- url_for('/categories') %>">分类</a>
+          </li>
+          <li class="nav-li">
+            <a href="<%- url_for('/tags') %>">标签</a>
+          </li>
+          <li class="nav-li">
+            <a href="<%- url_for('/achives') %>">归档</a>
+          </li>
+          <li class="nav-li">
+            <a href="<%- url_for('/about') %>">关于</a>
+          </li>
+          <li class="nav-li">
+            <a href="<%- url_for('/links') %>">友链</a>
+          </li>
+          <li class="nav-li">
+            <a href="#">网盘</a>
+          </li>
+          <li class="nav-li">
+            <span class="local-search local-search-google local-search-plugin" style="">
+              <input type="search" placeholder="站内搜索..." id="local-search-input" class="local-search-input-cls" style="">
+              <div id="local-search-result" class="local-search-result-cls"></div>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="cover">
+    <div class="cover-container">
+      <span class="cover-brand"><%= theme.words_title %></span>
+      <span class="cover-subbrand"><%= theme.subwords_title %></span>
+    </div>
+  </div>
+
+</header>

@@ -1,0 +1,15 @@
+footer{
+	height: 114px;
+	background-color: #1D2B2D;
+}
+.footer-container{
+	width: 1140px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+.footer-container span{
+	margin-top: 20px!important;
+	margin: 0 auto;
+	color: #FFFFFF;
+}

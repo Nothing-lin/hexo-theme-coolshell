@@ -1,0 +1,16 @@
+.fix {
+		position: fixed;
+		top: 0;
+		left: 0;
+}
+/* 清除浮动 */
+.clearfix:after {
+	display: block;
+	content: '\200B';
+	height: 0;
+	clear: both;
+}
+/* 这个是修复nav被其他元素叠加在其上面，是nav处于最顶状态 */
+.clearfix{
+  z-index: 10;
+}
