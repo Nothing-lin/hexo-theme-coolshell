@@ -9,6 +9,7 @@
   width: 703px;
   height: auto;
   padding: 18px 72px;
+  padding-bottom: 0px !important;
 }
 
 .article-header-title {
