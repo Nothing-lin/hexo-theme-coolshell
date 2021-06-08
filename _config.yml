@@ -79,3 +79,11 @@ leancloud_visitors:
   enable: true
   app_id: VyzXf1kCRUkA4hAjMLghgNzS-gzGzoHsz
   app_key: OXYxxWQX15MwlNF0wsW4kyXX
+
+
+# Whether to display post-calender in the `archive` page
+# 设置在归档页面achive中是否显示'文章日历'控件
+# 仿GitHub贡献条
+postCalendar: true
+js:
+  echarts: https://cdn.jsdelivr.net/gh/cungudafa/cdn/js/echarts.min.js
